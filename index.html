@@ -362,6 +362,13 @@ footer{border:0}
 
 #brain::after{background:linear-gradient(180deg,#122B63 0%,rgba(18,43,99,0) 16%,rgba(245,246,248,0) 34%,rgba(245,246,248,.9) 58%,#F5F6F8 100%)}
 #families::after{background:linear-gradient(180deg,#2563EB 0%,rgba(37,99,235,0) 16%,rgba(255,255,255,0) 34%,rgba(255,255,255,.9) 58%,#FFFFFF 100%)}
+
+/* ===== product screenshots ===== */
+.shot{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.35);max-width:1100px;margin-left:auto;margin-right:auto}
+.shot img{width:100%;height:auto;display:block}
+.light .shot{box-shadow:0 20px 50px rgba(15,23,42,.14);border:1px solid #E5E7EB}
+.shots{display:grid;gap:20px}
+@media (max-width:720px){.shot{border-radius:10px}}
 </style>
 </head>
 <body>
@@ -552,16 +559,7 @@ footer{border:0}
       </ul>
       <button class="close" type="button" data-close="p-instr">Close</button>
     </div>
-    <div class="screen">
-      <div class="bar"><span><b>Small-group plan</b> · Comparing fractions with unlike denominators</span><span class="pill">Draft</span></div>
-      <div class="body">
-        <div class="cc-strip"><span class="pill">Grade 4</span><span class="pill">Readability 3.8</span><span class="pill">Group of 6</span><span class="pill">Spanish cognates on</span></div>
-        <div class="dl mid"></div><div class="dl"></div><div class="dl short"></div>
-        <div class="callout"><b>Watch for</b>Three students in this group still compare by numerator alone. Open with 2/3 vs 2/6 on the fraction strips before any symbols.</div>
-        <div class="dl mid" style="margin-top:16px"></div><div class="dl short"></div>
-        <div class="q-status" style="justify-content:space-between"><span>Drafted for Room 12 · until the teacher accepts</span><span>Next steps →</span></div>
-      </div>
-    </div>
+    <div class="shot"><img src="shot-asst.webp" alt="Faro teaching assistant: prioritized next steps for a class, with Go deeper and Generate all"></div>
   </div>
 </div>
 
@@ -633,6 +631,7 @@ footer{border:0}
     <div class="label">Reporting</div>
     <h2>One record. Student to district.</h2>
     <p class="sub">Mastery rolls up from the child to the classroom, the campus, and the district on one scale, against your state's expectations. A principal and a teacher are looking at the same number. Four portals, one truth.</p>
+    <div class="shot" style="margin-top:44px"><img src="shot-dash.webp" alt="Faro teacher dashboard: four classes with mastery bars and Next Steps"></div>
     <div class="acts"><button class="btn" type="button" data-panel="p-report" aria-expanded="false" aria-controls="p-report">Learn more</button></div>
   </div>
 </section>
@@ -649,15 +648,9 @@ footer{border:0}
       </ul>
       <button class="close" type="button" data-close="p-report">Close</button>
     </div>
-    <div class="screen">
-      <div class="bar"><span><b>Mastery</b> · one record, rolled up</span><span class="pill">Your district's cut scores</span></div>
-      <div class="body">
-        <div class="lvl"><b>Student</b><span>Placement, growth, areas of focus, can-do statements.</span><div class="mini"><i style="height:40%;background:var(--amber)"></i><i style="height:55%;background:var(--amber)"></i><i style="height:62%;background:var(--blue)"></i><i style="height:78%;background:var(--blue)"></i><i style="height:92%;background:var(--green)"></i></div></div>
-        <div class="lvl"><b>Classroom</b><span>Who needs what, grouped and ready. Skills by mastery band, never by code.</span><div class="mini"><i style="height:30%;background:var(--red)"></i><i style="height:48%;background:var(--amber)"></i><i style="height:70%;background:var(--blue)"></i><i style="height:86%;background:var(--blue)"></i><i style="height:60%;background:var(--green)"></i></div></div>
-        <div class="lvl"><b>Grade and campus</b><span>Growth by window, subject, and group. Where to send the intervention block.</span><div class="mini"><i style="height:50%;background:var(--blue)"></i><i style="height:58%;background:var(--blue)"></i><i style="height:66%;background:var(--blue)"></i><i style="height:74%;background:var(--green)"></i><i style="height:82%;background:var(--green)"></i></div></div>
-        <div class="lvl"><b>District</b><span>Every campus on one scale, against your state's expectations, ready for the board.</span><div class="mini"><i style="height:44%;background:var(--amber)"></i><i style="height:52%;background:var(--blue)"></i><i style="height:64%;background:var(--blue)"></i><i style="height:70%;background:var(--blue)"></i><i style="height:88%;background:var(--green)"></i></div></div>
-        <p class="tiny">Green advanced · blue proficient · amber approaching · red needs support</p>
-      </div>
+    <div class="shots">
+      <div class="shot"><img src="shot-cls.webp" alt="Class detail: overall placement distribution and performance by domain"></div>
+      <div class="shot"><img src="shot-rep.webp" alt="Reports: ask Faro about your data, plus prebuilt reports"></div>
     </div>
   </div>
 </div>
