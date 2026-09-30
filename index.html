@@ -5,15 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Faro — Know every student. Reach every student.</title>
 <meta name="description" content="Faro is one system for K-12 districts: a short computer-adaptive assessment that tells you what each student can do, Faro Brain that reads their work to find why they're stuck, and machine learning that writes every lesson, practice set and family note for that student.">
-<link rel="canonical" href="https://faroedu.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563EB'/%3E%3Cpath d='M10 7h13v4.2h-8.3v4.2h7.2v4.1h-7.2V25H10z' fill='%23fff'/%3E%3C/svg%3E">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Faro">
-<meta property="og:title" content="Faro — Know every student. Reach every student.">
-<meta property="og:description" content="One system for K-12 districts: a short computer-adaptive assessment, Faro Brain that captures how students think, and machine learning that drafts what could be taught next.">
-<meta property="og:url" content="https://faroedu.com/">
-<meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0B1F4B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Caveat:wght@700&display=swap" rel="stylesheet">
@@ -329,9 +320,9 @@ footer a{color:#fff}
 .s.light .btn:hover,.s.light .btn[aria-expanded="true"]{background:#1E40AF;color:#fff}
 /* photo seams: top = previous section's end, bottom = next section's start */
 #top::after{background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 30%,rgba(11,31,75,.6) 68%,#0B1F4B 100%)}
-#brain::after{background:linear-gradient(180deg,#122B63 0%,rgba(18,43,99,0) 18%,rgba(245,246,248,0) 48%,rgba(245,246,248,.86) 74%,#F5F6F8 100%)}
+#brain::after{background:linear-gradient(180deg,#122B63 0%,rgba(18,43,99,0) 16%,rgba(245,246,248,0) 34%,rgba(245,246,248,.9) 58%,#F5F6F8 100%)}
 #instruction::after{background:linear-gradient(180deg,#FFFFFF 0%,rgba(255,255,255,0) 18%,rgba(30,64,175,0) 48%,rgba(30,64,175,.68) 76%,#1E40AF 100%)}
-#families::after{background:linear-gradient(180deg,#2563EB 0%,rgba(37,99,235,0) 18%,rgba(255,255,255,0) 48%,rgba(255,255,255,.88) 74%,#FFFFFF 100%)}
+#families::after{background:linear-gradient(180deg,#2563EB 0%,rgba(37,99,235,0) 16%,rgba(255,255,255,0) 34%,rgba(255,255,255,.9) 58%,#FFFFFF 100%)}
 #privacy::after{background:linear-gradient(180deg,#EEF4FF 0%,rgba(11,31,75,.78) 22%,rgba(11,31,75,.82) 85%,#0B1F4B 100%)}
 .cta{background:linear-gradient(180deg,#0B1F4B 0%,#122B63 100%) !important}
 .cta .form .btn{background:var(--red);border-color:var(--red)}
@@ -341,6 +332,7 @@ footer a{color:#fff}
 .panel,.panel.open{border:0}
 footer{border:0}
 .light .cc-row.hot .cc-n{color:var(--red)}
+
 /* ===== v11: centered composition on every viewport ===== */
 .s{justify-content:center}
 .s .c{margin:0 auto;text-align:center;max-width:960px;width:100%;padding-top:44vh}
@@ -360,15 +352,21 @@ footer{border:0}
 @media (max-width:960px){.cta .w{grid-template-columns:1fr}.cta .w>div:first-child{text-align:center}}
 @media (max-width:720px){.s .c{padding:0 24px 56px}.s.navy .c,.s.gray .c,.s.white .c,.s.blue .c{padding:88px 24px}h1{font-size:clamp(34px,10vw,48px)}h2{font-size:clamp(26px,7.2vw,36px)}.sub{font-size:16px}.btn{min-width:0;width:100%;max-width:320px}.acts{flex-direction:column;align-items:center}}
 
-#brain::after{background:linear-gradient(180deg,#122B63 0%,rgba(18,43,99,0) 16%,rgba(245,246,248,0) 34%,rgba(245,246,248,.9) 58%,#F5F6F8 100%)}
-#families::after{background:linear-gradient(180deg,#2563EB 0%,rgba(37,99,235,0) 16%,rgba(255,255,255,0) 34%,rgba(255,255,255,.9) 58%,#FFFFFF 100%)}
-
-/* ===== product screenshots ===== */
-.shot{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(0,0,0,.35);max-width:1100px;margin-left:auto;margin-right:auto}
-.shot img{width:100%;height:auto;display:block}
-.light .shot{box-shadow:0 20px 50px rgba(15,23,42,.14);border:1px solid #E5E7EB}
-.shots{display:grid;gap:20px}
-@media (max-width:720px){.shot{border-radius:10px}}
+/* ===== product screenshots (v13) ===== */
+.win{margin:56px 0 0 50%;transform:translateX(-50%);width:min(1180px,calc(100vw - 64px));border-radius:14px;overflow:hidden;background:#0B1F4B;box-shadow:0 40px 100px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.1);position:relative;text-align:left}
+.win .tb{height:40px;background:#0E1A38;display:flex;align-items:center;gap:8px;padding:0 16px;border-bottom:1px solid rgba(255,255,255,.06);font:500 12px/1 "DM Sans",sans-serif;color:rgba(255,255,255,.45)}
+.win .tb i{width:11px;height:11px;border-radius:50%;background:#2B3A66;display:block}
+.win .tb span{margin-left:12px;letter-spacing:.02em}
+.win img{display:block;width:100%;height:auto}
+.win figcaption{position:static;margin:0;padding:14px 18px;font-size:13px;color:rgba(255,255,255,.6);background:#0E1A38;border-top:1px solid rgba(255,255,255,.06)}
+.light .win{box-shadow:0 30px 80px rgba(15,23,42,.16),0 0 0 1px #E5E7EB;background:#fff}
+.light .win .tb{background:#F1F3F7;border-bottom:1px solid #E5E7EB;color:#6B7280}
+.light .win .tb i{background:#D5D9E2}
+.light .win figcaption{background:#F8F9FB;border-top:1px solid #E5E7EB;color:#6B7280}
+#ml .win{max-width:860px}
+.panel .win{margin:0;width:auto;transform:none}
+.panel .win img{aspect-ratio:auto}
+@media (max-width:720px){.win{margin-top:40px;border-radius:10px;width:calc(100vw - 32px)}.win .tb{height:30px;padding:0 12px}.win .tb i{width:8px;height:8px}.win .tb span{display:none}.win figcaption{font-size:12px;padding:10px 12px}}
 </style>
 </head>
 <body>
@@ -416,6 +414,7 @@ footer{border:0}
     <h2>Where each student stands, in one class period</h2>
     <p class="sub">A computer-adaptive check-in that adjusts after every answer. Twelve to thirty items, not seventy. It returns a grade-level placement, a level for every domain, and ranked areas of focus that hand off directly to instruction.</p>
     <div class="acts"><button class="btn" type="button" data-panel="p-compass" aria-expanded="false" aria-controls="p-compass">Try a check-in</button></div>
+    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-cls.webp" alt="Class detail: overall placement of 52 students across mastery levels, and performance by domain" loading="lazy"><figcaption>One Grade 4 section after a Compass check-in — placement, then every domain, on one screen.</figcaption></figure>
   </div>
 </section>
 <div class="panel light" id="p-compass">
@@ -506,6 +505,7 @@ footer{border:0}
     <h2>Drafted for this student. Not pulled from a library.</h2>
     <p class="sub">Other platforms "personalize" by placing a child into a catalog of pre-built lessons. Faro's machine learning reads the student's record — what they understand, how they read, what supports they need, what's fading — and drafts the lesson, the practice, and the family note for that child, for the teacher to review. Then it learns which instruction moved students, and offers that first.</p>
     <div class="acts"><button class="btn" type="button" data-panel="p-ml" aria-expanded="false" aria-controls="p-ml">Watch it write</button></div>
+    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-asst.webp" alt="Faro drafts prioritized next steps for a class: a small-group intervention, a diagnostic, and a quick win, each with Go deeper" loading="lazy"><figcaption>Drafts for one class, ranked. The teacher opens what she wants, and decides.</figcaption></figure>
   </div>
 </section>
 <div class="panel light" id="p-ml">
@@ -559,7 +559,16 @@ footer{border:0}
       </ul>
       <button class="close" type="button" data-close="p-instr">Close</button>
     </div>
-    <div class="shot"><img src="shot-asst.webp" alt="Faro teaching assistant: prioritized next steps for a class, with Go deeper and Generate all"></div>
+    <div class="screen">
+      <div class="bar"><span><b>Small-group plan</b> · Comparing fractions with unlike denominators</span><span class="pill">Draft</span></div>
+      <div class="body">
+        <div class="cc-strip"><span class="pill">Grade 4</span><span class="pill">Readability 3.8</span><span class="pill">Group of 6</span><span class="pill">Spanish cognates on</span></div>
+        <div class="dl mid"></div><div class="dl"></div><div class="dl short"></div>
+        <div class="callout"><b>Watch for</b>Three students in this group still compare by numerator alone. Open with 2/3 vs 2/6 on the fraction strips before any symbols.</div>
+        <div class="dl mid" style="margin-top:16px"></div><div class="dl short"></div>
+        <div class="q-status" style="justify-content:space-between"><span>Drafted for Room 12 · until the teacher accepts</span><span>Next steps →</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -631,8 +640,8 @@ footer{border:0}
     <div class="label">Reporting</div>
     <h2>One record. Student to district.</h2>
     <p class="sub">Mastery rolls up from the child to the classroom, the campus, and the district on one scale, against your state's expectations. A principal and a teacher are looking at the same number. Four portals, one truth.</p>
-    <div class="shot" style="margin-top:44px"><img src="shot-dash.webp" alt="Faro teacher dashboard: four classes with mastery bars and Next Steps"></div>
     <div class="acts"><button class="btn" type="button" data-panel="p-report" aria-expanded="false" aria-controls="p-report">Learn more</button></div>
+    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-dash.webp" alt="Teacher home: four classes, each with a mastery bar and a Next Steps button" loading="lazy"><figcaption>A teacher’s home page. Four classes, 237 students, who needs what today.</figcaption></figure>
   </div>
 </section>
 <div class="panel light" id="p-report">
@@ -648,10 +657,7 @@ footer{border:0}
       </ul>
       <button class="close" type="button" data-close="p-report">Close</button>
     </div>
-    <div class="shots">
-      <div class="shot"><img src="shot-cls.webp" alt="Class detail: overall placement distribution and performance by domain"></div>
-      <div class="shot"><img src="shot-rep.webp" alt="Reports: ask Faro about your data, plus prebuilt reports"></div>
-    </div>
+    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-rep.webp" alt="Reports: ask Faro anything about your data, plus eight prebuilt reports" loading="lazy"></figure>
   </div>
 </div>
 

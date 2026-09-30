@@ -8,7 +8,7 @@ One self-contained page. No build step.
 
 ## Deploy
 
-Netlify project lively-brigadeiros-976d13, linked to this repo: branch main, publish directory ".", no build command. Every commit to main deploys.
+Netlify project incomparable-eclair-84f273 (serves faroedu.com), linked to this repo: branch main, publish directory ".", no build command. Every commit to main deploys.
 
 ## Editing rules (from Abram)
 
