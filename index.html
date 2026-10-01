@@ -365,6 +365,9 @@ footer{border:0}
 .light .win figcaption{background:#F8F9FB;border-top:1px solid #E5E7EB;color:#6B7280}
 #ml .win{max-width:860px}
 .panel .win{margin:0;width:auto;transform:none}
+.panel .win.full{grid-column:1/-1;margin-top:40px}
+.panel .win.full.narrow{max-width:820px;margin-left:auto;margin-right:auto;width:100%}
+.panel.light .win{box-shadow:0 24px 60px rgba(15,23,42,.14),0 0 0 1px #E5E7EB}
 .panel .win img{aspect-ratio:auto}
 @media (max-width:720px){.win{margin-top:40px;border-radius:10px;width:calc(100vw - 32px)}.win .tb{height:30px;padding:0 12px}.win .tb i{width:8px;height:8px}.win .tb span{display:none}.win figcaption{font-size:12px;padding:10px 12px}}
 </style>
@@ -414,7 +417,6 @@ footer{border:0}
     <h2>Where each student stands, in one class period</h2>
     <p class="sub">A computer-adaptive check-in that adjusts after every answer. Twelve to thirty items, not seventy. It returns a grade-level placement, a level for every domain, and ranked areas of focus that hand off directly to instruction.</p>
     <div class="acts"><button class="btn" type="button" data-panel="p-compass" aria-expanded="false" aria-controls="p-compass">Try a check-in</button></div>
-    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-cls.webp" alt="Class detail: overall placement of 52 students across mastery levels, and performance by domain" loading="lazy"><figcaption>One Grade 4 section after a Compass check-in — placement, then every domain, on one screen.</figcaption></figure>
   </div>
 </section>
 <div class="panel light" id="p-compass">
@@ -449,6 +451,7 @@ footer{border:0}
         <p class="tiny">Sample items for illustration. A real Compass check-in asks 12–30 items and reports across every domain in the subject.</p>
       </div>
     </div>
+    <figure class="win full"><div class="tb"><i></i><i></i><i></i></div><img src="shot-cls.webp" alt="Class detail after a Compass check-in: placement distribution across mastery levels and performance by domain"><figcaption>What the teacher sees after the check-in: placement first, then every domain, on one screen.</figcaption></figure>
   </div>
 </div>
 
@@ -505,7 +508,6 @@ footer{border:0}
     <h2>Drafted for this student. Not pulled from a library.</h2>
     <p class="sub">Other platforms "personalize" by placing a child into a catalog of pre-built lessons. Faro's machine learning reads the student's record — what they understand, how they read, what supports they need, what's fading — and drafts the lesson, the practice, and the family note for that child, for the teacher to review. Then it learns which instruction moved students, and offers that first.</p>
     <div class="acts"><button class="btn" type="button" data-panel="p-ml" aria-expanded="false" aria-controls="p-ml">Watch it write</button></div>
-    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-asst.webp" alt="Faro drafts prioritized next steps for a class: a small-group intervention, a diagnostic, and a quick win, each with Go deeper" loading="lazy"><figcaption>Drafts for one class, ranked. The teacher opens what she wants, and decides.</figcaption></figure>
   </div>
 </section>
 <div class="panel light" id="p-ml">
@@ -532,6 +534,7 @@ footer{border:0}
         <div class="q-status" id="qStatus"><span class="spin"></span><span id="qMsg">Press Run to watch Faro look up the class before it drafts a word.</span></div>
       </div>
     </div>
+    <figure class="win full narrow"><div class="tb"><i></i><i></i><i></i></div><img src="shot-asst.webp" alt="Faro drafts prioritized next steps for a class, each with Go deeper and a Generate all option"><figcaption>The drafts, ranked. The teacher opens what she wants and decides what is taught.</figcaption></figure>
   </div>
 </div>
 
@@ -641,7 +644,6 @@ footer{border:0}
     <h2>One record. Student to district.</h2>
     <p class="sub">Mastery rolls up from the child to the classroom, the campus, and the district on one scale, against your state's expectations. A principal and a teacher are looking at the same number. Four portals, one truth.</p>
     <div class="acts"><button class="btn" type="button" data-panel="p-report" aria-expanded="false" aria-controls="p-report">Learn more</button></div>
-    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-dash.webp" alt="Teacher home: four classes, each with a mastery bar and a Next Steps button" loading="lazy"><figcaption>A teacher’s home page. Four classes, 237 students, who needs what today.</figcaption></figure>
   </div>
 </section>
 <div class="panel light" id="p-report">
@@ -657,7 +659,8 @@ footer{border:0}
       </ul>
       <button class="close" type="button" data-close="p-report">Close</button>
     </div>
-    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-rep.webp" alt="Reports: ask Faro anything about your data, plus eight prebuilt reports" loading="lazy"></figure>
+    <figure class="win"><div class="tb"><i></i><i></i><i></i></div><img src="shot-dash.webp" alt="Teacher home: four classes, each with a mastery bar and a Next Steps button"><figcaption>A teacher’s home page. Four classes, 237 students, who needs what today.</figcaption></figure>
+    <figure class="win full"><div class="tb"><i></i><i></i><i></i></div><img src="shot-rep.webp" alt="Reports: ask Faro anything about your data, plus eight prebuilt reports"><figcaption>Ask Faro in plain language, or pick a prebuilt report. Same record either way.</figcaption></figure>
   </div>
 </div>
 
